@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Suite" thread-count="2" parallel="tests">
+    <test name="Registration" parallel="tests" >
+        <classes>
+            <class name="Elit1"/>
+        </classes>
+    </test>
+    <test name="Search" parallel="tests" >
+        <classes>
+            <class name="Elit2"/>
+        </classes>
+    </test>
+
+    <test name="Filtr" parallel="tests" >
+        <classes>
+            <class name="Elit3"/>
+        </classes>
+    </test>
+    <test name="Pom" parallel="tests" >
+        <classes>
+            <class name="PomBased"/>
+        </classes>
+    </test>
+
+</suite>
