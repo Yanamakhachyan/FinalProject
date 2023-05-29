@@ -8,13 +8,13 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class ChromeRunner {
 
-    @BeforeMethod
+    @BeforeMethod (description = "open browser")
     public static void setUp(){
 
         System.setProperty("selenide.browserSize", "1920x1080");
         open("https://ee.ge/");
     }
-    @AfterMethod
+    @AfterMethod (description = "clean Cookies, clear Browser Local Storage, close Window")
     public void tearDown(){
         Selenide.clearBrowserCookies();
         Selenide.clearBrowserLocalStorage();

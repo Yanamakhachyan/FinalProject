@@ -10,16 +10,14 @@ public class RegistrationPage {
 
     public SelenideElement
 
-    regBut =  $(byText("რეგისტრაცია")),
-    regPageText =  $(byText("სწრაფი რეგისტრაცია")),
-            inputname = $(byId("firstName")),
-    inputlastname = $(byId("lastName")),
-    inputemail = $(byId("email"));
-
-
-
-
-
+            regBut = $(byText("რეგისტრაცია")),
+            regPageText = $(byText("სწრაფი რეგისტრაცია")),
+            inputName = $(byId("firstName")),
+            inputLastName = $(byId("lastName")),
+            inputEmail = $(byId("email")),
+            inputPassword =  $(byId("password")),
+            inputConfirmPassword = $(byId("confirmPassword")),
+            singUpBut =  $(byId("singup"));
 
 
 
